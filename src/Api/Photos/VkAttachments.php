@@ -176,7 +176,7 @@ class VkAttachments
                 $params['group_id']=$this->userId;
                 break;
         }
-        return $this->saveWallPhotoParseResponse($this->vkConnect->method('photos.saveWallPhoto', $params));
+        return $saveWallPhoto;
     }
 
     /**
