@@ -129,7 +129,7 @@ class VkAttachments
                 );
                 break;
         }
-        $response = json_decode($this->vkConnect->method('docs.getWallUploadServer', $params), true);
+        $response = json_decode($this->vkConnect->method('docs.getUploadServer', $params), true);
         if (!array_key_exists('response', $response)) {
             new ApiException($response);
         }
